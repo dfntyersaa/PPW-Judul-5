@@ -27,3 +27,6 @@ INSERT INTO mahasiswa (npm, nama, program_studi, angkatan, email) VALUES
 ('240101020', 'Dewi Lestari', 'Rekayasa Perangkat Lunak', 2024, 'dewi.lestari@example.com')
 ON DUPLICATE KEY UPDATE npm=npm;
 
+SELECT COUNT(*) FROM mahasiswa WHERE npm = :npm;
+
+INSERT INTO mahasiwa (npm, nama, program_studi, angkatan, email) VALUES (:npm, :nama, :prodi, :angkatan, :email);
